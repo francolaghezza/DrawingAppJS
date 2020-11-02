@@ -50,15 +50,17 @@ canvas.addEventListener("mousemove",(e)=>{
 
     x = e.clientX-canvas_X;
     y = (e.clientY-canvas_Y) + 19;
-    
 
     // Pintar
     if(dibujar){
         
         barra.style.marginLeft = "-100px";
         ctx.lineWidth = grosor.value;
+        ctx.lineCap = lineCap;
         ctx.lineTo(x,y);
         ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x, y);
     }
 
     // Borrar
@@ -114,9 +116,11 @@ canvas.addEventListener("touchmove", function(e) {
     if(dibujar){
         barra.style.marginLeft = "-100px";
         ctx.lineWidth = grosor.value;
-
+        ctx.lineCap = lineCap;
         ctx.lineTo(x,y);
         ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x, y);    
     }
     
     // Borrar
