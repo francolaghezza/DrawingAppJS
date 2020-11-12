@@ -38,7 +38,6 @@ canvas.addEventListener("mousedown",(e)=>{
         dibujar = true;
         ctx.lineTo(x,y);
         ctx.stroke();
-        
     }
 
     if (borra){
@@ -160,7 +159,6 @@ color.addEventListener("change",(e)=>{
 
     ctx.strokeStyle = color.value;
 });
-
 
 // Pincel
 var pincel = document.getElementById("pincel");
