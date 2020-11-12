@@ -160,7 +160,6 @@ color.addEventListener("change",(e)=>{
     ctx.strokeStyle = color.value;
 });
 
-
 // Pincel
 var pincel = document.getElementById("pincel");
 
