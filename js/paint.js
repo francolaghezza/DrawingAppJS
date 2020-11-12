@@ -38,7 +38,6 @@ canvas.addEventListener("mousedown",(e)=>{
         dibujar = true;
         ctx.lineTo(x,y);
         ctx.stroke();
-        
     }
 
     if (borra){
