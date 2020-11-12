@@ -84,7 +84,7 @@
                 </div>
                 <div class="row">
                     <div class="col-2">
-                        <span class="bg-color selector-ayuda"></span>
+                        <span id="bg-color-ayuda" class="bg-color selector-ayuda"></span>
                     </div>
                     <div class="col-10">
                         <span>Color de fondo</span>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="row">
                     <div class="col-2">
-                        <span class="color selector-ayuda"></span>
+                        <span id="color-ayuda" class="color selector-ayuda"></span>
                     </div>
                     <div class="col-10">
                         <span>Color del pincel</span>
@@ -137,6 +137,7 @@
         $("#bg_color").change(function(event) {
     
             $("#background-color").css('background-color',$(this).val());
+            $("#bg-color-ayuda").css('background-color',$(this).val());
         });
 
         $("#background-color").click(function(event) {
@@ -148,6 +149,7 @@
         $("#color").change(function(event) {
     
             $("#color-lapiz").css('background-color',$(this).val());
+            $("#color-ayuda").css('background-color',$(this).val());
         });
 
         $("#color-lapiz").click(function(event) {
