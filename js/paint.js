@@ -6,7 +6,6 @@ var dibuja = false;
 var borrar = false;
 var borra = false;
 var barra = document.getElementById("barra");
-var guardar = document.getElementById("guardar");
 
 // Canvas
 const canvas = document.getElementById("canvas");
