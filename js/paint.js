@@ -33,7 +33,8 @@ canvas.addEventListener("mousedown",(e)=>{
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineCap = lineCap;
-
+    barra.style.marginLeft = "-105px";
+    
     if(dibuja){
         dibujar = true;
         ctx.lineTo(x,y);
@@ -94,7 +95,8 @@ canvas.addEventListener("touchstart", function(e) {
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineCap = lineCap;
-
+    barra.style.marginLeft = "-100px";
+    
     if(dibuja){
         dibujar = true;
         ctx.lineTo(x,y);
